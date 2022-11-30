@@ -22,7 +22,7 @@ root.render(
         <Route index element={<App />} />
         <Route path="news" element={<News />} />
         <Route path="champions" element={<Champions />}>
-          <Route path="character" element={<Character />} />
+          {/* <Route path="champions/character" element={<Character />} /> */}
         </Route>
         <Route path="items" element={<Items />} />
         <Route path="tutorial" element={<Tutorial />} />
@@ -30,6 +30,7 @@ root.render(
         <Route path="download" element={<Download />} />
         <Route path="topup" element={<Topup />} />
         <Route path="test" element={<Test />} />
+        <Route path="champions/character" element={<Character />} />
       </Routes>
     </BrowserRouter>
   </React.StrictMode>
