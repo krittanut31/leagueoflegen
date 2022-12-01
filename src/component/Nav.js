@@ -7,29 +7,19 @@ const Nav = () => {
 
   return (
     <div className="flex h-16 w-full justify-center bg-black">
-      <div className="flex bg-white justify-center  w-[78rem] h-10 ">
-        <div className="flex space-x-4 items-center ">
-          <Link to="/" className=" ">
+      <div className="flex bg-white  w-[78rem] h-auto ">
+        <div className="grid grid-cols-9 text-center content-center h-auto">
+          <Link className="hover:bg-gray-500">
+            <div>
+              <img src="https://cdngarenanow-a.akamaihd.net/webth/lol/LoLWebsite/img/logo.png"></img>
+            </div>
+          </Link>
+          <Link to="/" className="hover:bg-gray-500 ">
             Home
           </Link>
           <Link to="/news" className=" ">
             News
           </Link>
-          <div>
-            <button
-              onMouseEnter={() => setIsShown(true)}
-              onMouseLeave={() => setIsShown(false)}
-            >
-              เกี่ยวกับเกม
-            </button>
-            {isShown && (
-              <div>
-                <Link to="/" className=" ">
-                  Home
-                </Link>
-              </div>
-            )}
-          </div>
           <Link to="/champions" className="">
             Champions
           </Link>
@@ -42,11 +32,11 @@ const Nav = () => {
           <Link to="/help" className="">
             Help
           </Link>
+          <Link to="/singin" className="">
+            Login
+          </Link>
           <Link to="/topup" className="">
             เติมเงิน
-          </Link>
-          <Link Link to="/test" className="">
-            Test
           </Link>
         </div>
       </div>

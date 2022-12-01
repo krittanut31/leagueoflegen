@@ -11,8 +11,8 @@ import Tutorial from "./page/Tutorial";
 import Help from "./page/Help";
 import Download from "./page/Download";
 import Topup from "./page/Topup";
-import Test from "./page/Test";
 import Character from "./page/Character";
+import Singin from "./page/Singin";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
@@ -29,8 +29,8 @@ root.render(
         <Route path="help" element={<Help />} />
         <Route path="download" element={<Download />} />
         <Route path="topup" element={<Topup />} />
-        <Route path="test" element={<Test />} />
         <Route path="champions/character" element={<Character />} />
+        <Route path="singin" element={<Singin />} />
       </Routes>
     </BrowserRouter>
   </React.StrictMode>
