@@ -1,7 +1,6 @@
 import Nav from "../component/Nav";
-import { Link } from "react-router-dom";
 
-const Singin = () => {
+const Register = () => {
   return (
     <div>
       <Nav />
@@ -14,34 +13,39 @@ const Singin = () => {
                 type="text"
                 name="id"
                 className=" placeholder:text-slate-400 block bg-white w-full border border-slate-300 rounded-md py-2 pl-5 pr-3  shadow-sm focus:outline-none focus:border-sky-500 focus:ring-sky-500 focus:ring-1 sm:text-sm"
-                placeholder="Usename or email"
+                placeholder="Usename"
               />
               <input
                 type="text"
-                name="password"
+                name="password1"
                 className=" placeholder:text-slate-400 block bg-white w-full border border-slate-300 rounded-md py-2 pl-5 pr-3 mt-6  shadow-sm focus:outline-none focus:border-sky-500 focus:ring-sky-500 focus:ring-1 sm:text-sm"
                 placeholder="Password"
               />
+              <input
+                type="text"
+                name="password2"
+                className=" placeholder:text-slate-400 block bg-white w-full border border-slate-300 rounded-md py-2 pl-5 pr-3 mt-6  shadow-sm focus:outline-none focus:border-sky-500 focus:ring-sky-500 focus:ring-1 sm:text-sm"
+                placeholder="Re-enter Password"
+              />
+              <input
+                type="text"
+                name="email"
+                className=" placeholder:text-slate-400 block bg-white w-full border border-slate-300 rounded-md py-2 pl-5 pr-3 mt-6  shadow-sm focus:outline-none focus:border-sky-500 focus:ring-sky-500 focus:ring-1 sm:text-sm"
+                placeholder="Email"
+              />
+              <label for="">
+                <p className="text-sm text-slate-600">
+                  You can use this email address to retrieve your password.
+                </p>
+              </label>
               <div>
                 <button className="mt-6 bg-red-700 w-full border border-slate-300 rounded-md">
                   <input
                     type="button"
-                    name="Sing in"
-                    value={"Sing in"}
+                    name="register"
+                    value={"Register Now"}
                     className="text-white"
                   />
-                </button>
-              </div>
-            </form>
-            <div className="flex mt-8 w-[16rem] justify-center text-center border-t-2 border-black ">
-              <p className="-mt-4 bg-white z-10 w-10">or</p>
-            </div>
-            <form>
-              <div>
-                <button className="mt-4 bg-red-500 w-[18rem] border border-slate-300 rounded-md">
-                  <Link to="/register">
-                    <p className="text-white">Register a new account</p>
-                  </Link>
                 </button>
               </div>
             </form>
@@ -52,4 +56,4 @@ const Singin = () => {
   );
 };
 
-export default Singin;
+export default Register;

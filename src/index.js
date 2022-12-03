@@ -13,6 +13,7 @@ import Download from "./page/Download";
 import Topup from "./page/Topup";
 import Character from "./page/Character";
 import Singin from "./page/Singin";
+import Register from "./page/Register";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
@@ -31,6 +32,7 @@ root.render(
         <Route path="topup" element={<Topup />} />
         <Route path="champions/character" element={<Character />} />
         <Route path="singin" element={<Singin />} />
+        <Route path="register" element={<Register />} />
       </Routes>
     </BrowserRouter>
   </React.StrictMode>

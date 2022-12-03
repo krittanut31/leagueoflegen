@@ -1,12 +1,19 @@
 import Nav from "../component/Nav";
-import { Routes, Route, Link, Outlet } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 const Champions = () => {
   return (
     <div>
       <Nav />
-      <div className="flex bg-pink-300 w-full h-auto ">
-        <div className="flex flex-col bg-blue-400 pt-5 w-[84rem]  h-screen mx-auto ">
+      <div className="flex flex-col bg-pink-300 w-full h-auto ">
+        <div className="flex bg-[url('https://cdngarenanow-a.akamaihd.net/games/lol/2020/LOLwebsite/img/blurred1.jpg')] bg-repeat-x w-full h-[16rem]">
+          <div className="flex flex-col w-[78rem]  bg-red-200 mx-auto">
+            <div className="my-12 h-full">
+              <div className="h-full bg-orange-400">content</div>
+            </div>
+          </div>
+        </div>
+        <div className="flex flex-col bg-blue-400 pt-5 w-[84rem]  h-auto mx-auto ">
           <p className="flex justify-center  bg-white  ">
             ค้นหาสไตล์การเล่นที่ใช่จากแชมเปี้ยนกว่า 162 ตัว!
           </p>
@@ -2129,6 +2136,9 @@ const Champions = () => {
               </Link> */}
             </div>
           </div>
+        </div>
+        <div className="flex bg-[#101215] w-full h-[24rem]">
+          <div className="flex space-x-4  my-10 bg-white w-[78rem] mx-auto"></div>
         </div>
       </div>
     </div>
